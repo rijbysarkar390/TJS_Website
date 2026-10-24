@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 242, 252);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container{
+    background-color: white;
+    width: 92%;
+    max-width: 500px;
+    padding: 35px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+.signup-container h1{
+    color: #1d3557;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+p span{
+    color: #1d3557;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.signup-container .form-group{
+    margin-bottom: 10px;
+}
+.signup-container .form-group label{
+    display: block;
+    color: #1d3557;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.signup-container .form-group input,
+.signup-container .form-group select{
+    width: 98%;
+    padding: 5px;
+    border: 1px solid #ccd3df;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+}
+.signup-container .form-group input,
+.signup-container .form-group select{
+    outline: none;
+    border-color: #d6e0f7;
+}
+.signup-container .form-group input[type="file"]{
+    padding: 5px;
+    font-size: 12px;
+}
+.signup-btn{
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1749b5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.signup-btn:hover{
+    background-color: #2563eb;
+}
+.login-link a{
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login-link a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    body {
+        padding: 14px 10px;
+        align-items: flex-start;
+    }
+    .signup-container {
+        width: 100%;
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+    .signup-container h1 {
+        font-size: 26px;
+    }
+    .signup-container p span {
+        font-size: 17px;
+    }
+    .signup-container .form-group {
+        margin-bottom: 14px;
+    }
+    .signup-container .form-group input:not([type="file"]),
+    .signup-container .form-group select {
+        font-size: 16px;
+        min-height: 44px;
+    }
+    .signup-container .form-group input[type="file"] {
+        font-size: 12px;
+    }
+    .signup-btn {
+        min-height: 46px;
+        font-size: 16px;
+    }
+}
